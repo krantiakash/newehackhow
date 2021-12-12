@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title>Join eHackHow</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	  <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      input {
+        outline: none;
+      }
+      input:focus , input:hover {
+        box-shadow: 0px 0px 5px 0px #3b82f6;
+        border: 1px solid #06b6d4;
+        transition-duration: 0.1s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="min-h-screen flex items-center justify-center bg-purple-300">
+      <div class="bg-white p-6 rounded shadow-2xl sm:w-2/3 max-w-lg min-w-min sm:p-10 w-full mx-3 sm:mx-0 my-2">
+        <h2 class="font-bold text-2xl sm:text-3xl text-center mb-8 text-gray-800">Create your free Account</h2>
+        <form class="space-y-5">
+          <div class="space-y-2">
+            <label for="email" class="block font-semibold text-gray-700">Name</label>
+            <input id="text" type="text" class="py-3 px-4 border border-gray-200 rounded-lg w-full text-sm outline-none"/>
+          </div>
+          <div class="space-y-2">
+            <label for="email" class="block font-semibold text-gray-700">Email</label>
+            <input id="email" type="text" class="py-3 px-4 border border-gray-200 rounded-lg w-full text-sm outline-none"/>
+          </div>
+          <div class="space-y-2">
+            <label for="password" class="block font-semibold text-gray-700">Password</label>
+            <input id="password" type="password" class="p-3 border border-gray-200 rounded-lg w-full outline-none"/>
+          </div>
+          <button type="submit" class="content-center bg-green-400 font-bold py-2 w-full rounded mt-6 hover:bg-green-500 text-gray-800">Get Started</button>
+        </form>
+        <div class="my-4 flex items-center justify-center space-between">
+          <hr class="border border-gray-200 w-2/5"/>
+          <span class="w-1/5 text-center text-gray-600">or</span>
+          <hr class="border border-gray-200 w-2/5"/>
+        </div>
+        <button class="block w-full p-2 border border-gray-400 rounded font-semibold hover:bg-gray-100 hover:font-bold"><i class="fa fa-google" aria-hidden="true"></i> &nbsp;Sign Up With Google</button>
+        <p class="mt-4 font-semibold text-center">Already a User? <span class="text-green-600 font-bold hover:underline hover:decoration-green-600 cursor-pointer">Sign In</span></p>
+      </div>
+    </div>
+  </body>
+</html>
