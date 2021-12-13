@@ -1,0 +1,677 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+:root {
+  /* Font Variables */
+  --mainFont: "Poppins", "sans-serif";
+  --textFont: "Roboto", sans-serif;
+
+  /* Color Variables */
+  --white: #fff;
+  --orange: #f6836b;
+  --red: #f00;
+  --gray: #304f58;
+  --dark: #1d1d1d;
+}
+
+/*
+=============================
+  Global Styles
+=============================
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:active,
+:hover,
+:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* body {
+  background: radial-gradient(circle at 120% -20%, #131723, #2d4455);
+} */
+
+/*
+=============================
+  Header
+=============================
+*/
+
+/* Navbar */
+.header .navigation-wrap {
+  font-family: var(--mainFont);
+  position: fixed;
+  width: 100%;
+  left: 0;
+  z-index: 999;
+  padding: 0 2rem;
+}
+
+.header .navigation-wrap .navbarMain {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+/* Site Brand */
+
+.header .site-brand {
+  display: flex;
+  align-items: center;
+}
+
+.header .site-brand .brand-icon img {
+  width: clamp(4.2rem, 10.2vw, 6rem);
+}
+
+.header .site-brand .navbar-brand {
+  font-size: clamp(1.3rem, 3.1vw, 1.8rem);
+  letter-spacing: 0.2rem;
+  color: var(--dark);
+}
+
+/* Hamburger */
+
+.header .navbar-toggler {
+  color: var(--dark);
+}
+
+.header .navbar-toggler:focus {
+  outline: unset;
+  border: unset;
+  box-shadow: none;
+}
+
+/* Main Menu */
+
+.header .navbar-nav .nav-item .nav-link {
+  display: inline-block;
+  color: var(--dark);
+  text-transform: capitalize;
+  font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+  padding: 0;
+  margin-left: 5rem;
+}
+
+.header .navbar-nav .nav-item .nav-link.active {
+  color: var(--orange);
+  border-bottom: 4px solid var(--orange);
+}
+
+/*
+=============================
+  Top Banner
+=============================
+*/
+
+/* Top banner */
+
+.top-banner {
+  position: relative;
+  height: 100%;
+  /* border: solid red; */
+  padding: 13.8rem 0;
+}
+
+/* Main row */
+
+.top-banner .main-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Left Side */
+
+.top-banner .left-side {
+  padding: 3rem 0;
+  display: flex;
+  flex-flow: column;
+  gap: 1rem;
+}
+
+.top-banner .left-side .titleText {
+  font-family: var(--mainFont);
+  color: var(--dark);
+  font-size: clamp(2rem, 6vw, 4rem);
+}
+
+.top-banner .left-side .titleText span {
+  color: var(--orange);
+}
+
+.top-banner .left-side p {
+  font-family: var(--textFont);
+  color: var(--dark);
+  font-size: clamp(1rem, 2.3vw, 1.3rem);
+}
+
+.top-banner .left-side .main-btn button {
+  font-size: clamp(0.8rem, 2.2vw, 1.2rem);
+  font-family: var(--mainFont);
+  padding: 0.8rem clamp(1rem, 3.3vw, 2.3rem);
+  background: var(--orange);
+  color: var(--white);
+  text-transform: capitalize;
+  border-radius: 0.5rem;
+  letter-spacing: clamp(0.1rem, 0.3vw, 0.2rem);
+  border: none;
+  outline: none;
+}
+
+.top-banner .left-side .main-btn button:hover {
+  background: none;
+  border: 1px solid var(--orange);
+  color: var(--orange);
+  transition: 0.3s linear;
+}
+
+/* Right Side */
+
+.top-banner .right-side {
+  text-align: center;
+}
+
+.top-banner .right-side img {
+  position: relative;
+  height: 33rem;
+  border-radius: 50%;
+  box-shadow: 0px 0px 30px 10px #f6836b;
+}
+
+/* Circles */
+
+.top-banner .circle {
+  position: absolute;
+  border-radius: 100%;
+}
+
+.top-banner .circle-1 {
+  background: rgb(246, 131, 107);
+  background: linear-gradient(
+    10deg,
+    rgba(246, 131, 107, 1) 30%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  width: 5rem;
+  height: 5rem;
+  left: 45%;
+  top: 20%;
+  transform: translateX(-50%);
+}
+
+.top-banner .circle-2 {
+  background: rgb(246, 131, 107);
+  background: linear-gradient(
+    10deg,
+    rgba(246, 131, 107, 1) 40%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  width: 7rem;
+  height: 7rem;
+  left: 90%;
+  top: 55%;
+  transform: translateX(-50%);
+}
+
+.top-banner .circle-3 {
+  background: rgb(246, 131, 107);
+  background: linear-gradient(
+    10deg,
+    rgba(246, 131, 107, 1) 10%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  width: 4rem;
+  height: 4rem;
+  left: 20%;
+  bottom: 10%;
+  transform: translateX(-50%);
+}
+
+/*
+=============================
+  Who are we
+=============================
+*/
+
+/* Left Side */
+
+.section-two {
+  height: 100%;
+  background: #f4f3f3;
+  /* border: solid red; */
+  padding: 12rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.section-two .mainDiv {
+  padding: 5rem 3rem;
+  background: var(--white);
+  /* background: linear-gradient(210deg, #39576e, #2b344f); */
+  box-shadow: 0px 0px 5px 1px #1b2532;
+  height: 100%;
+}
+
+.section-two .left-side {
+  padding: 4rem;
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
+}
+
+.section-two .left-side .mainTitle .titleText {
+  color: var(--orange);
+  font-family: var(--mainFont);
+  font-size: clamp(1.5rem, 4.5vw, 3rem);
+}
+
+/* Main Line */
+
+.section-two .mainLine {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.section-two .mainLine .line {
+  background: var(--orange);
+  flex: 12;
+  height: 4px;
+  border-radius: 5px;
+}
+
+/* Dot Main */
+
+.section-two .mainLine .dotMain {
+  display: flex;
+  justify-content: space-evenly;
+  flex: 1;
+}
+
+.section-two .mainLine .dot {
+  background: var(--orange);
+  border-radius: 100%;
+  width: 5px;
+  height: 5px;
+}
+
+/* Paragraph */
+
+.section-two .left-side p {
+  font-size: clamp(1rem, 2.3vw, 1.3rem);
+  color: var(--dark);
+}
+
+.section-two .left-side p .paraSpan {
+  color: var(--orange);
+}
+
+/* Right Side */
+
+.section-two .right-side {
+  /* border: solid green; */
+}
+
+.section-two .right-side img {
+  height: 27rem;
+  width: 100%;
+}
+
+/*
+=============================
+  What we do
+=============================
+*/
+
+/* Section Three */
+
+.section-three {
+  height: 100%;
+  background: #fafafa;
+  /* border: solid red; */
+  padding: 12rem 0;
+  display: flex;
+  align-items: center;
+}
+
+/* Main Div */
+
+.section-three .mainDiv {
+  padding: 5rem;
+  background: var(--white);
+  /* background: linear-gradient(210deg, #39576e, #2b344f); */
+  box-shadow: 0px 0px 5px 1px #1b2532;
+  height: 100%;
+}
+
+/* Main Title Div */
+
+.section-three .mainTitleDiv {
+  margin-bottom: 3rem;
+}
+
+.section-three .mainTitleDiv .mainTitle .titleText {
+  color: var(--dark);
+  font-family: var(--mainFont);
+  font-size: clamp(1.5rem, 4.5vw, 3rem);
+}
+
+/* Main Line */
+
+.section-three .mainLine {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.section-three .mainLine .line {
+  background: var(--dark);
+  flex: 12;
+  height: 4px;
+  border-radius: 5px;
+}
+
+/* Dot Main */
+
+.section-three .mainLine .dotMain {
+  display: flex;
+  justify-content: space-evenly;
+  flex: 1;
+}
+
+.section-three .mainLine .dot {
+  background: var(--dark);
+  border-radius: 100%;
+  width: 5px;
+  height: 5px;
+}
+
+/* Cat Section */
+
+/* Main Box */
+
+.section-three .main-box {
+  text-align: center;
+  padding: 2rem 0;
+  box-shadow: 0px 0px 1px 1px #1b2532;
+  height: 100%;
+}
+
+/* Title Div */
+
+.section-three .main-box .titleDiv {
+  border-bottom: 3px solid #90969e;
+}
+
+.section-three .main-box h1 {
+  font-family: var(--mainFont);
+  color: var(--orange);
+  font-size: clamp(1.5rem, 3.5vw, 2rem);
+}
+
+/* Bottom Div */
+
+.section-three .main-box .bottomDiv {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 80%;
+}
+
+.section-three .main-box .bottomDiv p {
+  font-family: var(--textFont);
+  color: var(--dark);
+  font-size: clamp(1rem, 2.3vw, 1.3rem);
+  padding: 1rem 4rem;
+  text-align: left;
+}
+
+/* Bottom Div Button */
+
+.section-three .main-box .bottomDiv .secBtn {
+  font-size: clamp(0.8rem, 2.2vw, 1.2rem);
+  font-family: var(--mainFont);
+  padding: 0.8rem clamp(1rem, 2.5vw, 1.5rem);
+  color: var(--white);
+  background: var(--orange);
+  text-transform: capitalize;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+}
+
+.section-three .main-box .bottomDiv .secBtn:hover {
+  background: none;
+  border: 1px solid var(--orange);
+  color: var(--orange);
+  transition: 0.3s linear;
+}
+
+/*
+=============================
+  Latest Blogs
+=============================
+*/
+
+/* Section Four */
+
+.section-four {
+  height: 100%;
+  background: #f4f3f3;
+  /* border: solid red; */
+  padding: 10rem 0;
+  display: flex;
+  align-items: center;
+}
+
+/* Main Div */
+
+.section-four .mainDiv {
+  padding: 5rem;
+  background: var(--white);
+  /* background: linear-gradient(210deg, #39576e, #2b344f); */
+  box-shadow: 0px 0px 5px 1px #1b2532;
+  height: 100%;
+}
+
+/* Main Title Div */
+
+.section-four .mainTitleDiv {
+  margin-bottom: 3rem;
+}
+
+.section-four .mainTitleDiv .mainTitle .titleText {
+  color: var(--dark);
+  font-family: var(--mainFont);
+  font-size: clamp(1.5rem, 4.5vw, 3rem);
+}
+
+/* Main Line */
+
+.section-four .mainLine {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.section-four .mainLine .line {
+  background: var(--dark);
+  flex: 12;
+  height: 4px;
+  border-radius: 5px;
+}
+
+/* Dot Main */
+
+.section-four .mainLine .dotMain {
+  display: flex;
+  justify-content: space-evenly;
+  flex: 1;
+}
+
+.section-four .mainLine .dot {
+  background: var(--dark);
+  border-radius: 100%;
+  width: 5px;
+  height: 5px;
+}
+
+/* Blog Section */
+
+.section-four .blogSecDiv {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-four .blogSecDiv .blogCard .blogCardMain {
+  box-shadow: 0px 0px 10px 1px #1b2532;
+  cursor: pointer;
+}
+
+.section-four .blogSecDiv .blogCard .blogCardMain:hover {
+  transition: 0.3s linear;
+  box-shadow: 0px 0px 10px 1px var(--orange);
+}
+
+/* Image Div */
+
+.section-four .blogSecDiv .blogCard .imgDiv {
+  width: 100%;
+  height: 15rem;
+}
+
+.section-four .blogSecDiv .blogCard .imgDiv img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Content Data */
+
+.section-four .contentData {
+  height: 16rem;
+  display: flex;
+  flex-flow: column;
+}
+
+/* Content Div */
+
+.section-four .contentData .contentDiv {
+  padding: 0rem 0.8rem;
+  height: 100%;
+  justify-content: space-between;
+  display: flex;
+  flex-flow: column;
+  flex: 1;
+}
+
+.section-four .contentData .contentDiv .catTitle {
+  text-align: center;
+  color: var(--dark);
+  font-size: clamp(1rem, 2.1vw, 1.1rem);
+}
+
+.section-four .contentData .contentDiv h3 {
+  color: var(--dark);
+  font-size: clamp(1.2rem, 2.7vw, 1.5rem);
+}
+
+.section-four .contentData .contentDiv .postBy {
+  text-align: right;
+  color: var(--dark);
+  font-size: clamp(1rem, 2.1vw, 1.1rem);
+}
+
+/* Footer Div */
+
+.section-four .contentData .footerDiv {
+  display: flex;
+  font-family: var(--textFont);
+  font-weight: bold;
+  justify-content: space-between;
+  padding: 1rem 0.8rem;
+  color: var(--dark);
+}
+
+.section-four .contentData .footerDiv .dateDiv i {
+  color: var(--orange);
+}
+
+.section-four .contentData .footerDiv .readMore i {
+  font-size: 1.6rem;
+  color: var(--orange);
+}
+
+/*
+=============================
+  Footer
+=============================
+*/
+
+.section-five {
+  background: var(--dark);
+}
+
+.section-five .mainDiv,
+.section-five .copyDiv {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.section-five .mainDiv .socialList {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 2rem;
+}
+
+.section-five .mainDiv .socialList a {
+  color: var(--white);
+  font-size: clamp(1.5rem, 3.5vw, 2rem);
+}
+
+.section-five .mainDiv .socialList a i:hover {
+  color: var(--orange);
+  transition: 0.2s ease-in;
+}
+
+.section-five .mainDiv .socialList a i {
+  padding: 1rem;
+}
+
+.section-five .copyDiv p {
+  color: var(--white);
+  font-size: 1rem;
+  padding: 1rem;
+}

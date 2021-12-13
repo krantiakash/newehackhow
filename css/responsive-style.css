@@ -1,0 +1,404 @@
+@media screen and (max-width: 1024px) {
+  /*
+  =============================
+    Header
+  =============================
+  */
+
+  .header .navigation-wrap {
+    padding: 0;
+  }
+
+  /*
+  =============================
+    Top Banner
+  =============================
+  */
+
+  .top-banner .main-row {
+    flex-flow: column-reverse;
+    height: 100%;
+    align-items: center;
+    justify-center: center;
+    padding: 5rem 0;
+  }
+
+  .top-banner .right-side,
+  .top-banner .left-side {
+    width: 90%;
+  }
+
+  .top-banner .left-side h1 br {
+    display: none;
+  }
+  .top-banner .left-side .main-btn {
+    text-align: center;
+  }
+
+  .top-banner .circle-1 {
+    left: 20%;
+  }
+
+  .top-banner .circle-2 {
+    top: 55%;
+    left: 80%;
+  }
+
+  /*
+  =============================
+    Who are we
+  =============================
+  */
+
+  /*
+  =============================
+    What we do
+  =============================
+  */
+
+  /*
+  =============================
+    Latest Blogs
+  =============================
+  */
+}
+
+@media screen and (max-width: 991px) {
+  /*
+  =============================
+    Header
+  =============================
+  */
+  .header .navigation-wrap {
+    background: var(--white);
+    position: fixed;
+  }
+
+  .header .navigation-wrap .main-menu {
+    height: calc(100vh - 4rem);
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  /*
+  =============================
+    Top Banner
+  =============================
+  */
+
+  /*
+  =============================
+    Who are we
+  =============================
+  */
+
+  .section-two {
+    height: 100%;
+    padding: 10rem 0;
+  }
+
+  .section-two .mainDiv {
+    flex-flow: column-reverse;
+    padding: 3rem;
+  }
+
+  .section-two .mainDiv .left-side {
+    width: 100%;
+  }
+
+  .section-two .mainDiv .right-side img {
+    width: auto;
+  }
+
+  /*
+  =============================
+    What we do
+  =============================
+  */
+
+  .section-three {
+    height: 100%;
+    padding: 10rem 0;
+  }
+
+  .section-three .mainDiv {
+    padding: 3rem;
+  }
+
+  .section-three .mainDiv .catSecDiv {
+    flex-flow: column;
+    gap: 2rem;
+  }
+
+  .section-three .left-side,
+  .section-three .right-side {
+    width: 100%;
+  }
+
+  .section-three .main-box {
+    box-shadow: 0 0 3px 1px #1b2532;
+  }
+
+  /*
+  =============================
+    Latest Blogs
+  =============================
+  */
+
+  .section-four {
+    height: 100%;
+    padding: 10rem 0;
+  }
+
+  .section-four .mainDiv {
+    padding: 3rem;
+  }
+
+  .section-four .mainDiv .blogSecDiv {
+    flex-flow: column;
+    gap: 3rem;
+  }
+
+  .section-four .mainDiv .blogSecDiv .blogCard {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /*
+  =============================
+    Header
+  =============================
+  */
+
+  /*
+  =============================
+    Top Banner
+  =============================
+  */
+  .top-banner .left-side,
+  .top-banner .right-side {
+    width: 100%;
+  }
+
+  .top-banner .right-side img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .top-banner .circle {
+    display: none;
+  }
+
+  /*
+  =============================
+    Who are we
+  =============================
+  */
+
+  .section-two {
+    height: 100%;
+    padding: 10rem 0;
+  }
+
+  .section-two .mainDiv {
+    flex-flow: column-reverse;
+    padding: 3rem;
+  }
+
+  .section-two .mainDiv .left-side {
+    padding: 2rem;
+  }
+
+  .section-two .mainDiv .right-side img {
+    width: 100%;
+  }
+
+  .section-two .mainLine .line {
+    flex: 8;
+  }
+
+  /*
+  =============================
+    What we do
+  =============================
+  */
+
+  .section-three .mainLine .line {
+    flex: 8;
+  }
+
+  /*
+  =============================
+    Latest Blogs
+  =============================
+  */
+
+  .section-four .mainLine .line {
+    flex: 8;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  /*
+  =============================
+    Top Banner
+  =============================
+  */
+
+  .top-banner {
+    padding: 0;
+  }
+
+  .top-banner .main-row {
+    margin: 0 0.1rem;
+  }
+
+  /*
+  =============================
+    Who are we
+  =============================
+  */
+
+  .section-two {
+    padding: 5rem 0;
+  }
+
+  .section-two .mainDiv {
+    margin: 0 0.1rem;
+  }
+
+  .section-two .mainLine .line {
+    flex: 7;
+  }
+
+  /*
+  =============================
+    What we do
+  =============================
+  */
+
+  .section-three {
+    padding: 5rem 0;
+  }
+
+  .section-three .mainDiv {
+    margin: 0 0.1rem;
+  }
+
+  .section-three .mainLine .line {
+    flex: 7;
+  }
+
+  /*
+  =============================
+    Latest Blogs
+  =============================
+  */
+
+  .section-four {
+    padding: 5rem 0;
+  }
+
+  .section-four .mainDiv {
+    margin: 0 0.1rem;
+  }
+
+  .section-four .mainLine .line {
+    flex: 7;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  /*
+  =============================
+    Header
+  =============================
+  */
+
+  /*
+  =============================
+    Top Banner
+  =============================
+  */
+  .top-banner .main-row {
+    flex-flow: column-reverse;
+    height: 100%;
+    align-items: center;
+    justify-center: center;
+    padding: 10rem 0 5rem 0;
+  }
+
+  .top-banner .right-side,
+  .top-banner .left-side {
+    width: 100%;
+  }
+
+  .top-banner .left-side h1 br {
+    display: none;
+  }
+  .top-banner .left-side .main-btn {
+    text-align: center;
+  }
+
+  .top-banner .right-side img {
+    height: 100%;
+  }
+
+  .top-banner .circle {
+    display: none;
+  }
+
+  /*
+  =============================
+    Who are we
+  =============================
+  */
+
+  .section-two .mainDiv {
+    margin: 0 0.1rem;
+    padding: 0;
+  }
+
+  .section-two .right-side img {
+    width: 100%;
+  }
+
+  .section-two .mainLine .line {
+    flex: 5;
+  }
+
+  /*
+  =============================
+    What we do
+  =============================
+  */
+
+  .section-three .mainDiv {
+    margin: 0 0.1rem;
+    padding: 3rem 1rem;
+  }
+
+  .section-three .main-box .bottomDiv p {
+    padding: 2rem;
+  }
+
+  .section-three .mainLine .line {
+    flex: 5;
+  }
+
+  /*
+  =============================
+    Latest Blogs
+  =============================
+  */
+
+  .section-four .mainDiv {
+    margin: 0 0.1rem;
+    padding: 3rem 1rem;
+  }
+
+  .section-four .mainLine .line {
+    flex: 5;
+  }
+}
